@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/bg_search"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/gradient_background" />
+
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_search"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            tools:text="50 Results" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_git"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_search"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/bg_search"
+            app:iconifiedByDefault="false"
+            app:queryHint="Cari disini" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_git"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:listitem="@layout/item_row_user" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/bg_search"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:contentDescription="@string/search_image"
+            android:gravity="center"
+            android:src="@drawable/ic_baseline_search_24"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/search_notfound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_search"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/search_notfound"
+            android:textColor="@color/dark_grey_blue"
+            android:textSize="20sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progressBar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/bg_search"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_back_button"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_settings_24"
+            android:tint="@color/weldon_blue" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSettings"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

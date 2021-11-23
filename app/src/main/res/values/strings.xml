@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">GithubUser</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="foto_user">Foto User</string>
+    <string name="search_notfound">Search not found</string>
+    <string name="result_search">Result: %d</string>
+    <string name="my_location">My Location</string>
+    <string name="back_button">Back Button</string>
+    <string name="repository">Repository</string>
+    <string name="followers">Follower</string>
+    <string name="following">Following</string>
+    <string name="blank">blank</string>
+    <string name="search_image">Search Image</string>
+    <!--    <string name="result_favorites">Show %d Favorites</string>-->
+
+
+    <string name="favorite_user_not_found">Favorite user not found</string>
+    <string name="star_image">Star Image</string>
+    <string name="favorite">Favorite</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="following_notfound">Tidak ada yang diikuti</string>
+    <string name="follower_notfound">Tidak ada yang mengikuti</string>s
+
+    <!-- Sync Preferences -->
+    <string name="theme">Theme</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="pref_dark_mode">dark_mode</string>
+    <string name="add_favorite">User has been saved to favorite.</string>
+    <string name="remove_favorite">User has been deleted from favorite.</string>
+    <string name="settings">Settings</string>
+</resources>

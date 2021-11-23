@@ -1,0 +1,6 @@
+<resources>
+    <plurals name="result_favorites">
+        <item quantity="one">Show %d favorite found</item>
+        <item quantity="other">Show %d favorites found</item>
+    </plurals>
+</resources>
